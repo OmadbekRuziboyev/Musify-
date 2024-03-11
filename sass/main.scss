@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+            font-family: "Open Sans", sans-serif;
+            box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body{
+   background-image: url(../imgs/Musify-\ Landing\ Page-\ Dark\ Mode.svg);
+   background-position: top 10px;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+header{
+    nav{
+        .container{
+            .nav_left{
+                img{
+                    animation: logo 3s linear infinite;
+                }
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav_right{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 20px;
+ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    li{
+        a{  color: white;
+            text-decoration: none;
+            position: relative;
+            border-bottom: rgba(0, 0, 0, 0);
+         &::after{
+            position: absolute;
+            content: "";
+            width: 0%;
+            height: 8%;
+            background-color: orange;
+            bottom: 0px;
+            left: 0px;
+            transition: all .3s ease;
+         }
+         &:hover::after{
+            width: 100%;
+            height: 10%;
+         }
+        }
+    }
+}
+.night_day{
+    cursor: pointer;
+    margin-left: 50px;
+    background-color: rgb(174, 179, 184);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 17px;
+width: 60px;
+height: 25px;
+position: relative;
+span{
+    position: absolute;
+    right: 3px;
+    padding: 10px;
+    background-color: rgb(89, 86, 86);
+    border-radius: 50%;transition: all .3s ease;
+}
+span.active{
+    right: 37px;
+}
+    i{
+        color: yellow;
+    }
+}
+.icons{
+    display: flex;
+    margin-left: 50px;
+    gap: 35px;
+    align-items: center;
+    i{
+        color: white;
+        cursor: pointer;
+    }
+}
+.btn{
+    border: 2px solid #F14A16;
+    background-color: transparent;
+    color: #F14A16;
+    font-weight: 700;
+    border-radius: 15px;
+    margin-left: 40px;
+    padding: 7px 25px;
+    transition: all .2s ease;
+    &:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+}
+            }
+            .icons.active{
+                i{
+color: black;
+                }
+            }
+            .nav_right.active{
+                ul{
+                    li{
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .hero{
+        .container{
+            .hero_left{
+               
+                margin-top: 70px;
+                h1{
+                    font-size: 80px;
+            font-family: "Open Sans", sans-serif;
+            color: #FFFFFF;
+            font-weight: 700;
+                    span{
+                        color: #F14A16;
+                    }
+                }
+                p{
+                    margin-top: 20px;
+                    font-size: 26px;
+            font-family: "Open Sans", sans-serif;
+            color: #A4A4A4;
+font-weight: 250;
+        }
+        button{
+            margin-top: 40px;
+            margin-left: 20px;
+         padding: 10px 17px;
+         box-shadow: 0 0 20px #F14A16;
+         background-color: #F14A16;
+         border-radius: 18px;
+         border: none;
+         width: 170px;
+         color: white;
+         font-size: 17px;
+         font-weight: 500;
+         transition: all .3s ease;
+         &:hover{
+            scale: 1.1;
+            box-shadow: 0px 0px 20px black;
+         }
+        }
+        .btn2_hero{
+            border: 2px solid #F14A16;
+            background-color: transparent;
+            margin-left: 17px;
+            color: #F14A16;
+            font-weight: 700;transition: all .3s ease;
+            &:hover{
+               scale: 1.1;
+               box-shadow: 0px 0px 20px black;
+            }
+            i{
+                margin-right: 10px;
+            }
+        }
+            }
+            .hero_left.active{
+                h1{
+                 color: black;
+                }
+             }
+        }
+    }
+}
+main{
+    margin-top: 100px;    
+       .container{
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        .main_left{
+            margin-left: 68px;
+            i{
+                border: 2px solid white;
+                border-radius: 50%;
+               font-size: 30px;
+                padding: 23px 32px;
+                color: white;
+            }
+        }
+        .main_left.active{
+            i{
+                border: 2px solid rgb(0, 0, 0);
+                border-radius: 50%;
+               font-size: 30px;
+                padding: 23px 32px;
+                color: black;
+            }
+        }
+        .main_right{
+            margin-right: -70px;
+            .main_cards{
+                padding-bottom: 50px;
+                display: flex;
+                gap: 30px;
+                .main_card{ 
+                    backdrop-filter: blur(20px);
+                    z-index: -1;
+                    position: relative;
+                    padding-left: 15px;
+                    width: 300px;
+                    height: 160px;
+                    background: linear-gradient(116.15deg, rgba(192, 192, 192, 0.63) -10.88%, rgba(255, 255, 255, 0.49) -10.87%, rgba(255, 255, 255, 0.07) 74.79%);
+border-radius: 25px;
+                    h2{
+                        z-index: 3;
+                        padding-top: 68px;
+                        font-weight: 400;
+                        font-size: 24px;
+                        color: white;
+                    }
+                    p{
+                        margin-top: 10px;
+                        color: #FC9918;
+                        font-size: 23px;
+                        del{
+                            color: white;
+                            font-size: 18px;
+                        }
+                    }
+                    .HEADPHONE{
+                        position: absolute;
+                        width: 130px;
+                        margin-left: 70px;
+                        margin-top: -89px;
+                    }
+                }
+            }
+            .main_cards.active{        
+                .main_card{
+                    h2{
+                        color: black;
+                    }
+                    p{
+                        del{
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.night_day.active{
+.mode{
+    right: 10px;
+}
+ }
+body.active{
+    background-image: url(../imgs/Musify-\ Landing\ Page-\ Light\ Mode.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+@keyframes logo {
+    0%{
+        transform: perspective(23rem) rotateY(0deg) scale(1);   
+    }
+    10%{
+        transform: perspective(23rem) rotateY(-6deg) scale(1.2);
+    }
+    100%{
+        transform: perspective(23rem) rotateY(360deg) scale(1);
+    }
+}
